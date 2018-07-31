@@ -1,0 +1,6 @@
+Attached is a list of around 800 de-identified patient data records.
+Incongruity of some parameters can increase the diabetes risk.
+Your objective is to find out the relation of diabetes risk with other available parameters and few pointers are mentioned below:
+	1. Extract the json data into table format – share the extraction method/code and output table with us
+	2. Are you able to derive any insights from the given data set eg. distribution, feature info etc. Provide an explanation if required with the help of record counts etc. and data distribution graphs (eg. scatter, histogram, pie chart etc)
+	3. How do other parameters influence the Diabetes risk?

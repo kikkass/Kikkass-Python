@@ -1,0 +1,26 @@
+{
+	"city1":{
+		"male":{
+			"Low Risk":0,
+			"Moderate Risk":0,
+			"High Risk":0
+		},
+		"female":{
+			"Low Risk":0,
+			"Moderate Risk":0,
+			"High Risk":0
+		}
+	},
+	"city2":{
+		"male":{
+			"Low Risk":0,
+			"Moderate Risk":0,
+			"High Risk":0
+		},
+		"female":{
+			"Low Risk":0,
+			"Moderate Risk":0,
+			"High Risk":0
+		}
+	}
+}

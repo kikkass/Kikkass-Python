@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Talking Street</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(background1.jpg); background-repeat: no-repeat; background-position: top; background-size: cover; background-blend-mode: darken; margin-bottom: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-xs-0"></div>
+          <div class="col-lg-8 col-xs-12">
+            <h3 style="color: #FFFFFF;">Curate your culinary journeys with the help of local foodies</h3>
+            <div class="form-group">
+              <label for="txt-search"><strong>Search by City</strong></label>
+              <input type="text" class="form-control" id="txt-search" onkeyup="displayList(this)" placeholder="Start typing the city name">
+            </div>
+            <div id="filter-list">
+            </div>
+            <button type="button" class="btn btn-info btn-sm" disabled>Recommended</button>
+            <button type="button" class="btn btn-info btn-sm">Nearby</button>
+          </div>
+          <div class="col-lg-2 col-xs-0"></div>
+        </div>
+      </div>
+    </div>
+    <!---------------- EXTRA ---------------------->
+    <div class="jumbotron jumbotron-fluid" style="margin-top: 0px; padding-bottom: 1rem">
+      <div class="container">
+        <h4>
+          For the Foodies, by the foodies and to the foodies
+        </h4>
+        <hr>
+        <p>
+          At Talking Street, we believe that food is one of the best ways to get an insight into culture. Eating, talking and lingering across several places give us a different perspective that enriches us much more than our physical tummies.
+        </p>
+        <p>
+          A platform for foodies, by the foodies, we at Talking Street curate the most loved food recommendations by our local food experts across cities and towns. As a place that solely depends on your experience, we highly value local foodies who are willing to share their list of some of the best places to eat in and around you.
+        </p>
+        <p>
+          Be it crispy dosas from Chennai, sweet kulfis from Lucknow or the liveliest food from Singapore, we want to read all about it. We’re expanding across geographies and looking to cover everything from big cities to upcoming travel destinations (like Shillong, for example) in India, and are also on the path to exploring food in South-east Asia.
+        </p>
+      </div>
+    </div>
+    <!---------------- EXTRA ---------------------->
+    <div>
+      <form name="filter" action="results.html" method="GET">
+        <div class="container">
+          <div align="center">
+            <h4>OK, let's be specific..</h4>
+            <br>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="meal-search">Meal</label>
+                </div>
+                <select class="custom-select" id="meal-search" disabled>
+                  <option selected>Choose...</option>
+                </select>
+              </div>
+              <div><br></div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="loc-search">Location</label>
+                </div>
+                <select class="custom-select" id="loc-search" name="location">
+                  <option selected>Choose...</option>
+                </select>
+              </div>
+              <div><br></div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="ciusine-search">Cuisine</label>
+                </div>
+                <select class="custom-select" id="ciusine-search" name="cuisine">
+                  <option selected>Choose...</option>
+                </select>
+              </div>
+              <div><br></div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="type-search">Type of Eaterie</label>
+                </div>
+                <select class="custom-select" id="type-search" name="seating">
+                  <option selected>Choose...</option>
+                  <option value="Available">Seating avilable</option>
+                   <option value="Unavilable">Seating unavilable</option>
+                </select>
+              </div>
+              <div><br></div>
+            </div>
+          </div>
+          <div align="center">
+            <input type="reset" class="btn btn-outline-info" value="RESET" />
+            <input type="submit" class="btn btn-outline-info" value="APPLY" />
+          </div>
+        </div>
+      </form>      
+    </div>
+    <div>
+      <br>
+    </div>
+    
+    <div style="background-color: black; height: 100%; bottom: 0px">
+      <div class="container" align="center" style="padding-top: 2rem">
+        <h6 style="color: #AAAAAA">Talk to us: hello@talkingstreet.in</h6>
+        <p style="color: #999999">Privacy Policy</p>
+        <p style="color: #999999">Media Links</p>
+        <p style="color: #777777">Copyright © 2018 www.talkingstreet.in. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="Programming_Task_DataFile.json"></script>
+    <script type="text/javascript" src="filterSearch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
