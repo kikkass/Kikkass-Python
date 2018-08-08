@@ -15,7 +15,7 @@ def bubble_sort(arr):
 			break
 	return arr
 
-input_list = [3,9,8,5,2,4,1,2,9,6,5,7]
+input_list = [2,3,4,5,6,7,8,9,1]
 print(input_list)
 print("************************************")
 output_list = bubble_sort(input_list)
